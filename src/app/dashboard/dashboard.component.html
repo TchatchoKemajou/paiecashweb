@@ -1,0 +1,28 @@
+<div class="dash">
+  <form class="search d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+  <div class="table-responsive">
+  <table class="table caption-top table-hover table-bordered">
+    <caption>Listes des utilisateurs</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Téléphone</th>
+        <th scope="col">statut</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of Clients">
+        <th scope="row">{{client.clientID}}</th>
+        <td>{{client.clientName}}</td>
+        <td>{{client.clientPhone}}</td>
+        <td>{{ifActif(client.clientStatus)}}</td>
+        <td><button type="button" class="btn btn-primary btn-sm" [routerLink]="['/clients', client.clientID]">Détails</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>

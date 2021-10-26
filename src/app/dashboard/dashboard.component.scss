@@ -1,0 +1,21 @@
+.dash{
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .search{
+    max-width: 60% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    outline: none;
+    border: 0;
+    background: #199872;
+    color: white;
+    right: 0;
+  }
+}
+
