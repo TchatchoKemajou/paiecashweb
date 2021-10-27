@@ -2,7 +2,7 @@
   <app-header [inputSideNav]="sidenav" *ngIf="authenticationService.isAuthenticated"></app-header>
   <mat-sidenav-container class="example-sidenav-container"
   [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav  #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" opened >
+    <mat-sidenav  #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <app-sidenav *ngIf="authenticationService.isAuthenticated"></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
