@@ -22,6 +22,8 @@ import { FormsModule } from '@angular/forms';
 import { CommerciauxComponent } from './commerciaux/commerciaux.component';
 import { ClientdetailsComponent } from './clientdetails/clientdetails.component';
 import { CommonModule } from '@angular/common';
+import { FormcommerciauxComponent } from './formcommerciaux/formcommerciaux.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,12 +37,14 @@ import { CommonModule } from '@angular/common';
     RevendeursComponent,
     CommerciauxComponent,
     ClientdetailsComponent,
+    FormcommerciauxComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     CommonModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     // * MATERIAL IMPORTS
     MatSidenavModule,

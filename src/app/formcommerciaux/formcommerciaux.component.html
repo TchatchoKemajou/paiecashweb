@@ -1,0 +1,61 @@
+  <!-- container -->
+  <div class="container d-flex flex-column">
+    <div class="login row align-items-center justify-content-center g-0
+        min-vh-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xxl-4 py-8 py-xl-0">
+        <!-- Card -->
+        <div class="card smooth-shadow-md">
+          <!-- Card body -->
+          <div class="card-body p-6">
+            <div class="mb-4">
+              <p class="mb-6">Entrez vos informations!</p>
+            </div>
+            <!-- Form -->
+            <form (ngSubmit)="saveCommercial(comForm)" #comForm="ngForm">
+              <!-- Username -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Nom : </label>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Nom" required="" autofocus [(ngModel)]="commercial.first_name" #varfirst_name= "ngModel">
+              </div>
+
+
+              <div class="mb-3">
+                <label for="prename" class="form-label">Prenom : </label>
+                <input type="text" id="prename" class="form-control" name="prename" placeholder="Prenom" required="" [(ngModel)]="commercial.last_name" #varlast_name= "ngModel">
+              </div>
+
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Numero : </label>
+                <input type="phone" id="phone" class="form-control" name="phone" placeholder="UserName" required [(ngModel)]="commercial.phone" #varphone= "ngModel">
+              </div>
+
+
+              <!-- Password -->
+              <div class="mb-3">
+                <label for="password" class="form-label">Mot de passe : </label>
+                <input type="password" id="password" class="form-control" name="password" placeholder="**************" required="" [(ngModel)]="commercial.password" #varpassword= "ngModel">
+              </div>
+
+
+              <!-- Confirm Password -->
+              <div class="mb-3">
+                <label for="password" class="form-label">Confirmer : </label>
+                <input type="password" id="password" class="form-control" name="password" placeholder="**************" required=""  [(ngModel)]="commercial.password_confirmation" #varpassword_confirmation= "ngModel">
+              </div>
+
+              <div>
+                <!-- Button -->
+                <div class="d-grid">
+                  <button type="submit" class="btn">valider</button>
+                </div>
+
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
