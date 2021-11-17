@@ -34,13 +34,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "vendors/base/vendor.bundle.base.js",
-              "vendors/chart.js/Chart.min.js",
-              "vendors/jquery-bar-rating/jquery.barrating.min.js",
-              "js/off-canvas.js",
-              "js/hoverable-collapse.js",
-              "js/template.js",
-              "js/dashboard.js"
             ]
           },
           "configurations": {
